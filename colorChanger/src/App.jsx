@@ -8,8 +8,7 @@ function App() {
 
   return (
     <>
-      <div className=''>
-         
+      <div className='bg-red w-full h-full'/>
     </>
   )
 }
