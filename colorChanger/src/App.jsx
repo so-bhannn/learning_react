@@ -16,7 +16,7 @@ function App() {
     <>
       <div className='w-full h-screen' style={{backgroundColor: color}}>
         <div className='grid justify-center content-center h-screen'>
-          <div className='bg-white px-3 py-2 rounded-3xl shadow-lg font-mono  text-lg'>{selectedColor}</div>
+          <div className='bg-white px-3 py-2 rounded-3xl shadow-lg font-mono text-lg'>{selectedColor}</div>
           </div>
         <div className="flex flex-wrap fixed bottom-12 justify-center inset-x-0 px-2">
           <div className="flex flex-wrap justify-center space-x-3 bg-white px-3 py-2 rounded-3xl shadow-lg">
