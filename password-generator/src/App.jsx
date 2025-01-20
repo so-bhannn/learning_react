@@ -11,17 +11,23 @@ function App() {
     <>
     <div className='bg-slate-800 justify-self-center rounded-3xl shadow-lg shadow-slate-600 my-20 py-10 px-5'>
       <h1 className='text-center text-2xl'>Password Generator</h1>
-        <div className='flex shadow overflow-hidden rounded-3xl mb-3 mt-8 mx-10'>
-          <input type="text" className='outline-none w-full py-1 px-3' readOnly placeholder='Password' value={password}/>
+        <div className='flex shadow overflow-hidden rounded-3xl mb-3 mt-8 md:mx-10'>
+          <input type="text" className='outline-none w-full py-2 px-3 cursor-not-allowed' readOnly placeholder='Password' value={password}/>
           <button className='bg-orange-500 text-black px-3 py-0.5 font-mono'>copy</button>
         </div>
-        <div className='flex justify-center space-x-3'>
-          <label htmlFor="length">Length: {length}</label>
-          <input type="range"  min={5} max={15} name="" id="" />
-          <input type="checkbox" name="" id="" />
-          <label htmlFor="">Numbers</label>
-          <input type="checkbox" name="" id="" />
-          <label htmlFor="">Special Characters</label>
+        <div className='table-auto justify-self-center border-spacing-2 md:flex md:gap-x-2 '>
+          <tr>
+            <td><label htmlFor="length">Length: {length}</label></td>
+            <td><input className='w-44 cursor-grabbing' type="range" min={5} max={15} name="length" id="" /></td>
+          </tr>
+          <tr>
+            <td className='text-right'><input className='cursor-pointer' type="checkbox" name="num" id="" /></td>
+            <td><label htmlFor="num">Numbers</label></td>
+          </tr>
+          <tr>
+            <td className='text-right'><input className='cursor-pointer' type="checkbox" name="spl" id="" /></td>
+            <td><label htmlFor="spl">Special Characters</label></td>
+          </tr>
         </div>
       </div>
     </>
